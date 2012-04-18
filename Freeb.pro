@@ -5,14 +5,19 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
 
 TARGET = Freeb
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    cfreebbase.cpp \
+    ctester.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    cfreebbase.h \
+    ctester.h
 
 FORMS    += mainwindow.ui
